@@ -9,6 +9,46 @@
     <script type="module" defer src="/assets/js/index.js"></script>
   </head>
   <body>
-    <h1>Hola Mundo</h1>
+    <div class="contenedor">
+      <div class="contenedor__tag">
+        <div class="contenedor__hide">
+          Hide Chart
+        </div>
+        <button type="button" class="contenedor__button"><img src="assets/css/images/Vector 2 (1).png" alt=""></button>
+      </div>
+      <div class="contenedor__grafica">
+        <ul class="contenedor__parametros">
+          <li>AVERAGE :</li>
+          <li class="medida"><div class="temp"></div> - Temperature,<span class="celsius">C°</span></li>
+          <li class="medida"><div class="hum"></div> - Humidity,<span class="percent">%</span></li>
+          <li class="medida"><div class="wind"></div> - Wind Speed,<span class="seconds">m/s</span></li>
+          <li class="medida"><div class="atm"></div> - Atmosphere Pressure,<span class="meters">m/m</span></li>
+        </ul>
+        <div class="contenedor__parametros__indicadores">
+         <p>Value of Indicators</p>
+        </div>
+        <div class="contenedor__tabla">
+          <ul class="contenedor__tabla__medidas">
+            <li>-1.0</li>
+            <li>-1.5</li>
+            <li>-2.0</li>
+            <li>-2.5</li>
+            <li>-3.0</li>
+            <li>-3.5</li>
+            <li>-4.0</li>
+            <li>-4.5</li>
+            <li>-5.0</li>
+          </ul>
+          <div class="contenedor__tabla__fechas">
+            <ul class="historial">
+              <li class="historial__fecha">fecha</li>
+              <li class="historial__fecha">fecha</li>
+              <li class="historial__fecha">fecha</li>
+              <li class="historial__fecha">fecha</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
   </body>
 </html>
