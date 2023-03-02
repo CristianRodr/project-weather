@@ -1,53 +1,62 @@
+:root {
+  --first: rgba(16, 33, 54, 0.8);
+  --second: rgba(255, 107, 9, 1);
+  --third: gray;
+  --fourth: white;
+  --five:rgba(9, 6, 235, 1);
+  --six:rgba(234, 154, 5, 1);
+  --seven: rgba(6, 120, 6, 1);
+  --eigth: rgba(16, 33, 54, 0.6);
+}
 *{
   margin: 0px;
   padding: 0px;
- 
+  font-family: 'Lato';
+  font-style: normal;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .contenedor{
-    width: 1060px;
-    height: 540px;
+    width: 280px;
+    height: 516px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    background-color:rgba(16, 33, 54, 0.8);
-    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    background-color:var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
   }
   .average, .contparams{
-    display: flex;
+    display: block;
   }
   .average{
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 8px;
   }
   .contparams .medida{
-    margin-right: 20px;
+    margin-left: 30px;
   }
   .contenedor__tag{
     width: 110px;
     height: 28px;
     position: absolute;
     top: 26px;
-    left: 860px;
+    left: 110px;
     display: flex;
   }
   .contenedor__hide{
     width: 72px;
     height: 18px;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
     align-self: center;
     text-decoration-line: underline;
-    color: orangered;
+    color:var(--second);
   }
   .contenedor__button{
     width: 28px;
     height: 28px;
-    background-color: gray;
+    background-color: var(--third);
     margin-left: 10px;
     border: none;
     border-radius: 50%;
@@ -61,23 +70,22 @@
     height: 430px;
     position: absolute;
     top: 88px;
-    left: 480px;
+    left: 10px;
   }
   .contenedor__parametros{
     width: 100%;
-    height: 18px;
-    display: flex;
+    height: auto;
+    display: block;
   }
   .contenedor__parametros li{
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 5px;
     list-style: none;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: white;
+    color:var(--fourth);
     opacity: 0.54;
   }
   .medida{
@@ -89,64 +97,52 @@
     height: 12px;
   }
   .temp{
-    background-color:rgba(255, 107, 9, 1);
+    background-color:var(--second);
     margin-right: 3px;
   }
   .hum{
-    background-color: rgba(9, 6, 235, 1);
+    background-color:var(--five);
     margin-right: 3px;
   }
   .wind{
-    background-color: rgba(234, 154, 5, 1);
+    background-color: var(--six);
     margin-right: 3px;
   }
   .atm{
-    background-color: rgba(6, 120, 6, 1);
+    background-color: var(--seven);
     margin-right: 3px;
   }
   .celsius{
-    color:rgba(255, 107, 9, 1);
+    color:var(--second);
   }
   .percent{
-    color: rgba(9, 6, 235, 1);
+    color:var(--five);
   }
   .seconds{
-    color: rgba(234, 154, 5, 1);
+    color:var(--six);
   }
   .meters{
-    color: rgba(6, 120, 6, 1);
+    color:var(--seven);
   }
   .contenedor__parametros__indicadores{
-    width:156px;
-    height: 20px;
-    rotate: -90deg;
-    margin-top: 170px;
-    margin-left: -68px;
-    color: white;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    opacity: 0.54;
+    display: none;
   }
   .contenedor__tabla{
-    width: 700px;
-    height: 350px;
-    margin-top: -160px;
-    margin-left: 40px;
+    width: 268px;
+    height: 265px;
+    margin-top: 22px;
+    margin-left: 22px;
     display: flex;
+    overflow: hidden;
   }
   .contenedor__tabla__medidas{
     width: 50px;
   }
   .contenedor__tabla__medidas li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     list-style: none;
-    color: #FFFFFF;
+    color:var(--fourth);
     opacity: 0.54;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -161,18 +157,15 @@
     display: flex;
   }
   .historial__fecha{
-    margin-right: 130px;
-    font-family: 'Lato';
-    font-style: normal;
+    margin-right: 90px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color:var(--fourth);
     list-style: none;
     opacity: 0.54;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contenedor{
     width: 620px;
@@ -180,8 +173,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    background-color:rgba(16, 33, 54, 0.8);
-    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    background-color:var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
   }
   .contenedor__tag{
@@ -195,19 +188,17 @@
   .contenedor__hide{
     width: 72px;
     height: 18px;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
     align-self: center;
     text-decoration-line: underline;
-    color: orangered;
+    color:var(--second);
   }
   .contenedor__button{
     width: 28px;
     height: 28px;
-    background-color: gray;
+    background-color:var(--third);
     margin-left: 10px;
     border: none;
     border-radius: 50%;
@@ -243,12 +234,10 @@
   .contenedor__parametros li{
     margin-right: 25px;
     list-style: none;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: white;
+    color:var(--fourth);
     opacity: 0.54;
   }
   .medida{
@@ -260,32 +249,32 @@
     height: 12px;
   }
   .temp{
-    background-color:rgba(255, 107, 9, 1);
+    background-color:var(--second);
     margin-right: 3px;
   }
   .hum{
-    background-color: rgba(9, 6, 235, 1);
+    background-color:var(--five);
     margin-right: 3px;
   }
   .wind{
-    background-color: rgba(234, 154, 5, 1);
+    background-color:var(--six);
     margin-right: 3px;
   }
   .atm{
-    background-color: rgba(6, 120, 6, 1);
+    background-color:var(--seven);
     margin-right: 3px;
   }
   .celsius{
-    color:rgba(255, 107, 9, 1);
+    color:var(--second);
   }
   .percent{
-    color: rgba(9, 6, 235, 1);
+    color:var(--five);
   }
   .seconds{
-    color: rgba(234, 154, 5, 1);
+    color:var(--six);
   }
   .meters{
-    color: rgba(6, 120, 6, 1);
+    color:var(--seven);
   }
   .contenedor__parametros__indicadores{
     width:156px;
@@ -293,9 +282,7 @@
     rotate: -90deg;
     margin-top: 80px;
     margin-left: -108px;
-    color: white;
-    font-family: 'Lato';
-    font-style: normal;
+    color:var(--fourth);
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -314,10 +301,8 @@
     margin-left: 20px;
     margin-bottom: 10px;
     list-style: none;
-    color: #FFFFFF;
+    color:var(--fourth);
     opacity: 0.54;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -338,61 +323,57 @@
   .historial__fecha{
     margin-right: 120px;
     margin-left: 5px;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color:var(--fourth);
     list-style: none;
     opacity: 0.54;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 1024px) {
   .contenedor{
-    width: 280px;
-    height: 516px;
+    width: 1060px;
+    height: 540px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    background-color:rgba(16, 33, 54, 0.8);
-    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    background-color:var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
   }
   .average, .contparams{
-    display: block;
+    display: flex;
   }
   .average{
-    margin-left: 30px;
-    margin-bottom: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .contparams .medida{
-    margin-left: 30px;
+    margin-right: 20px;
   }
   .contenedor__tag{
     width: 110px;
     height: 28px;
     position: absolute;
     top: 26px;
-    left: 110px;
+    left: 860px;
     display: flex;
   }
   .contenedor__hide{
     width: 72px;
     height: 18px;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
     align-self: center;
     text-decoration-line: underline;
-    color: orangered;
+    color:var(--second);
   }
   .contenedor__button{
     width: 28px;
     height: 28px;
-    background-color: gray;
+    background-color:var(--third);
     margin-left: 10px;
     border: none;
     border-radius: 50%;
@@ -406,24 +387,21 @@
     height: 430px;
     position: absolute;
     top: 88px;
-    left: 10px;
+    left: 480px;
   }
   .contenedor__parametros{
     width: 100%;
-    height: auto;
-    display: block;
+    height: 18px;
+    display: flex;
   }
   .contenedor__parametros li{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 5px;
     list-style: none;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: white;
+    color:var(--fourth);
     opacity: 0.54;
   }
   .medida{
@@ -435,54 +413,60 @@
     height: 12px;
   }
   .temp{
-    background-color:rgba(255, 107, 9, 1);
+    background-color:var(--second);
     margin-right: 3px;
   }
   .hum{
-    background-color: rgba(9, 6, 235, 1);
+    background-color:var(--five);
     margin-right: 3px;
   }
   .wind{
-    background-color: rgba(234, 154, 5, 1);
+    background-color:var(--six);
     margin-right: 3px;
   }
   .atm{
-    background-color: rgba(6, 120, 6, 1);
+    background-color:var(--seven);
     margin-right: 3px;
   }
   .celsius{
-    color:rgba(255, 107, 9, 1);
+    color:var(--second);
   }
   .percent{
-    color: rgba(9, 6, 235, 1);
+    color:var(--five);
   }
   .seconds{
-    color: rgba(234, 154, 5, 1);
+    color:var(--six);
   }
   .meters{
-    color: rgba(6, 120, 6, 1);
+    color:var(--seven);
   }
   .contenedor__parametros__indicadores{
-    display: none;
+    width:156px;
+    height: 20px;
+    rotate: -90deg;
+    margin-top: 170px;
+    margin-left: -68px;
+    color:var(--fourth);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.54;
   }
   .contenedor__tabla{
-    width: 268px;
-    height: 265px;
-    margin-top: 22px;
-    margin-left: 22px;
+    width: 700px;
+    height: 350px;
+    margin-top: -160px;
+    margin-left: 40px;
     display: flex;
-    overflow: hidden;
   }
   .contenedor__tabla__medidas{
     width: 50px;
   }
   .contenedor__tabla__medidas li{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     list-style: none;
-    color: #FFFFFF;
+    color:var(--fourth);
     opacity: 0.54;
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -497,14 +481,13 @@
     display: flex;
   }
   .historial__fecha{
-    margin-right: 90px;
-    font-family: 'Lato';
-    font-style: normal;
+    margin-right: 130px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color:var(--fourth);
     list-style: none;
     opacity: 0.54;
   }
 }
+
