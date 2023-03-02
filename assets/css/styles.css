@@ -348,3 +348,163 @@
     opacity: 0.54;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contenedor{
+    width: 280px;
+    height: 516px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color:rgba(16, 33, 54, 0.8);
+    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    border-radius: 34px;
+  }
+  .average, .contparams{
+    display: block;
+  }
+  .average{
+    margin-left: 30px;
+    margin-bottom: 8px;
+  }
+  .contparams .medida{
+    margin-left: 30px;
+  }
+  .contenedor__tag{
+    width: 110px;
+    height: 28px;
+    position: absolute;
+    top: 26px;
+    left: 110px;
+    display: flex;
+  }
+  .contenedor__hide{
+    width: 72px;
+    height: 18px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    align-self: center;
+    text-decoration-line: underline;
+    color: orangered;
+  }
+  .contenedor__button{
+    width: 28px;
+    height: 28px;
+    background-color: gray;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contenedor__grafica{
+    width: 822px;
+    height: 430px;
+    position: absolute;
+    top: 88px;
+    left: 10px;
+  }
+  .contenedor__parametros{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .contenedor__parametros li{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    list-style: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    opacity: 0.54;
+  }
+  .medida{
+    display: flex;
+    align-items: center;
+  }
+  .temp ,.hum ,.wind ,.atm{
+    width: 12px;
+    height: 12px;
+  }
+  .temp{
+    background-color:rgba(255, 107, 9, 1);
+    margin-right: 3px;
+  }
+  .hum{
+    background-color: rgba(9, 6, 235, 1);
+    margin-right: 3px;
+  }
+  .wind{
+    background-color: rgba(234, 154, 5, 1);
+    margin-right: 3px;
+  }
+  .atm{
+    background-color: rgba(6, 120, 6, 1);
+    margin-right: 3px;
+  }
+  .celsius{
+    color:rgba(255, 107, 9, 1);
+  }
+  .percent{
+    color: rgba(9, 6, 235, 1);
+  }
+  .seconds{
+    color: rgba(234, 154, 5, 1);
+  }
+  .meters{
+    color: rgba(6, 120, 6, 1);
+  }
+  .contenedor__parametros__indicadores{
+    display: none;
+  }
+  .contenedor__tabla{
+    width: 268px;
+    height: 265px;
+    margin-top: 22px;
+    margin-left: 22px;
+    display: flex;
+    overflow: hidden;
+  }
+  .contenedor__tabla__medidas{
+    width: 50px;
+  }
+  .contenedor__tabla__medidas li{
+    margin-bottom: 10px;
+    list-style: none;
+    color: #FFFFFF;
+    opacity: 0.54;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contenedor__tabla__fechas{
+    width: 100%;
+    height: 18px;
+    align-self: last baseline;
+    z-index: 1;
+  }
+  .historial{
+    display: flex;
+  }
+  .historial__fecha{
+    margin-right: 90px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    list-style: none;
+    opacity: 0.54;
+  }
+}
