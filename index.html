@@ -17,11 +17,13 @@
   <body>
     <header class="header">
       <div class="container">
+        <svg width="22" height="22" id="ubicacion"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-icon-location"></use></svg>
         <form class="header__form">
           <label>
             <input type="text" class="form-countries">
           </label>
         </form>
+        <svg width="22" height="22" id="star"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Star-1"></use></svg>
       </div>
     </header>
 
@@ -34,19 +36,23 @@
 
             <div class="temp__square">
 
-              <div>
-                <svg></svg>
-                <span class="square-country">Kyiv, UA</span>
+              <div class="temp-icon">
+                <svg id="nubes" width="35" height="35"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Nubes"></use></svg>
+                <p class="square-country off">Kyiv, UA</p>
               </div>
 
               <p class="square-degrees">-3</p>
 
-              <div>
-                <h3>min</h3>
-                <span>-2°</span>
-                <div class="line"></div>
-                <h3>min</h3>
-                <span>-2°</span>
+              <div class="temp-text">
+                <div>
+                  <h3 class="off">min</h3>
+                  <p>-2°</p>
+                </div>
+                <div class="v-line siceL"></div>
+                <div>
+                  <h3 class="off">min</h3>
+                  <p>-2°</p>
+              </div>
               </div>
             </div>
             <div class="section__btn">
@@ -56,14 +62,8 @@
           </div>
         </section>
 
-        <article>
-          <div class="container__off">
-            <p class="legend">Who cares about the clouds when we're together? Just sing a song and bring the sunny weather.</p>
-            <p class="legend author">Dale Evans</p>
-          </div>
-        </article>
-
         <section class="section two">
+
           <div class="container__off">
             <div class="date__square">
 
@@ -77,16 +77,25 @@
                 </div>
 
                 <div class="square-sunny">
-                  <svg id="dawn"></svg>
-                  <span class="dawn">07:04</span>
+                  <svg id="dawn" width="20" height="20">
+                    <use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Icon-Amanecer"></use>
+                  </svg>
+                  <p class="dawn">07:04</p>
                   <div class="v-line"></div>
-                  <svg id="sunset"></svg>
-                  <span class="sunset">17:05</span>
+                  <svg id="sunset" width="20" height="20"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Icon-puesta"></use>
+                  </svg>
+                  <p class="sunset">17:05</span>
                 </div>
             </div>
 
             </div>
           </div>
+          <article>
+            <div class="container__off">
+              <p class="legend">Who cares about the clouds when we're together? Just sing a song and bring the sunny weather.</p>
+              <p class="legend author">Dale Evans</p>
+            </div>
+          </article>
         </section>
       </div>
     </main>

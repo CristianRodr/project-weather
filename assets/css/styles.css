@@ -49,6 +49,11 @@ h1 {
   margin: 0 auto;
 }
 
+header .container {
+  display: flex;
+  justify-content: center;
+}
+
 .header__form {
   display: flex;
   justify-content: center;
@@ -78,7 +83,45 @@ h1 {
   border-radius: 34px 0px 0px 34px;
   width: 450px;
   margin-bottom: 20px;
+  color: var(--color-text-main);
+  padding: 35px 0;
 }
+
+.off {
+  color: #767D85;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.temp-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.square-degrees {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 108px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 10px auto 15px;
+}
+
+.temp-text {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
 
 .section__btn {
   display: flex;
@@ -130,6 +173,12 @@ article .container__off {
   font-style: normal;
 }
 
+.two {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .date__square {
   width: 630px;
   display: flex;
@@ -143,28 +192,34 @@ article .container__off {
   padding-bottom: 90px;
 }
 
-sup {
-  font-size: 60px;
-}
-
-
 .square-day {
   font-style: normal;
   font-weight: 300;
   font-size: 90px;
   line-height: 108px;
-  display: flex;
   align-items: center;
   letter-spacing: 0.04em;
 }
 
 .day-details {
   display: flex;
+  gap: 45px;
+  align-items: center;
 }
+
+.day-details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+}
+
 
 .square-time, .square-sunny{
   display: flex;
-  gap: 20px;
+  align-items: center;
 }
 
 
@@ -172,4 +227,32 @@ sup {
   border-left: 1px solid #FFFFFF;
   height:22px;
   opacity: 0.4;
+  margin: 0 20px; 
+}
+
+.siceL {
+  border: 1px solid #27384A;
+  height:40px;
+}
+
+#nubes{
+  display: flex;
+  margin: 0 auto 10px;
+}
+
+#ubicacion {
+  position: absolute;
+  right: 860px;
+  bottom: 14px;
+}
+
+#star {
+  position: absolute;
+  right: 400px;
+  bottom: 14px;
+}
+
+#dawn, #sunset {
+  fill: #FF6B09;
+  margin-right: 10px;
 }
