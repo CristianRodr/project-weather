@@ -14,6 +14,16 @@
     box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
     border-radius: 34px;
   }
+  .average, .contparams{
+    display: flex;
+  }
+  .average{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .contparams .medida{
+    margin-right: 20px;
+  }
   .contenedor__tag{
     width: 110px;
     height: 28px;
@@ -152,6 +162,182 @@
   }
   .historial__fecha{
     margin-right: 130px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    list-style: none;
+    opacity: 0.54;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenedor{
+    width: 620px;
+    height: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color:rgba(16, 33, 54, 0.8);
+    box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
+    border-radius: 34px;
+  }
+  .contenedor__tag{
+    width: 110px;
+    height: 28px;
+    position: absolute;
+    top: 36px;
+    left: 320px;
+    display: flex;
+  }
+  .contenedor__hide{
+    width: 72px;
+    height: 18px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    align-self: center;
+    text-decoration-line: underline;
+    color: orangered;
+  }
+  .contenedor__button{
+    width: 28px;
+    height: 28px;
+    background-color: gray;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contenedor__grafica{
+    width: 589px;
+    height: 277px;
+    position: absolute;
+    top: 88px;
+    left: 90px;
+  }
+   .contenedor__parametros{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .contparams{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .average{
+    width: 150px;
+    height: 46px;
+    display: flex;
+    align-items: baseline;
+    text-align: right;
+   
+  }
+  .contenedor__parametros li{
+    margin-right: 25px;
+    list-style: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    opacity: 0.54;
+  }
+  .medida{
+    display: flex;
+    align-items: center;
+  }
+  .temp ,.hum ,.wind ,.atm{
+    width: 12px;
+    height: 12px;
+  }
+  .temp{
+    background-color:rgba(255, 107, 9, 1);
+    margin-right: 3px;
+  }
+  .hum{
+    background-color: rgba(9, 6, 235, 1);
+    margin-right: 3px;
+  }
+  .wind{
+    background-color: rgba(234, 154, 5, 1);
+    margin-right: 3px;
+  }
+  .atm{
+    background-color: rgba(6, 120, 6, 1);
+    margin-right: 3px;
+  }
+  .celsius{
+    color:rgba(255, 107, 9, 1);
+  }
+  .percent{
+    color: rgba(9, 6, 235, 1);
+  }
+  .seconds{
+    color: rgba(234, 154, 5, 1);
+  }
+  .meters{
+    color: rgba(6, 120, 6, 1);
+  }
+  .contenedor__parametros__indicadores{
+    width:156px;
+    height: 20px;
+    rotate: -90deg;
+    margin-top: 80px;
+    margin-left: -108px;
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.54;
+  }
+  .contenedor__tabla{
+    width: 589px;
+    height: 277px;
+    margin-top: -67px;
+    display: flex;
+  }
+  .contenedor__tabla__medidas{
+    width: 50px;
+  }
+  .contenedor__tabla__medidas li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+    color: #FFFFFF;
+    opacity: 0.54;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contenedor__tabla__medidas li:last-child{
+    margin-bottom: 0px;
+  }
+  .contenedor__tabla__fechas{
+    width: 100%;
+    height: 18px;
+    align-self: last baseline;
+    z-index: 1;
+    margin-bottom: 23px;
+  }
+  .historial{
+    display: flex;
+  }
+  .historial__fecha{
+    margin-right: 120px;
+    margin-left: 5px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
