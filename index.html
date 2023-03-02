@@ -4,11 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>Weather</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <script type="module" defer src="/assets/js/index.js"></script>
   </head>
   <body>
-    <h1>Hola Mundo</h1>
+    <header class="header">
+      <div class="container">
+        <form class="header__form">
+          <label>
+            <input type="text" class="form-countries">
+          </label>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+
+        <section class="section one">
+
+          <div class="container__off">
+
+            <div class="temp__square">
+
+              <div>
+                <svg></svg>
+                <span class="square-country">Kyiv, UA</span>
+              </div>
+
+              <p class="square-degrees">-3</p>
+
+              <div>
+                <h3>min</h3>
+                <span>-2°</span>
+                <div class="line"></div>
+                <h3>min</h3>
+                <span>-2°</span>
+              </div>
+
+              <div class="section__btns">
+                <button class="btn first">today</button>
+                <button class="btn first">5 days</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <article>
+          <div class="container__off">
+            <p class="legend">Who cares about the clouds when we're together? Just sing a song and bring the sunny weather.</p>
+            <span class="legend-author">Dale Evans</span>
+          </div>
+        </article>
+
+        <section class="section two">
+          <div class="container__off">
+            <div class="date__square">
+
+              <p class="square-day">8th Sat</p>
+
+              <div class="square-time">
+                <span class="month">-2°</span>
+                <div class="line"></div>
+                <span class="clock">-2°</span>
+              </div>
+
+              <div class="square-sunny">
+                <svg id="dawn"></svg>
+                <span class="dawn">07:04</span>
+                <div class="line"></div>
+                <svg id="sunset"></svg>
+                <span class="sunset">17:05</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
   </body>
 </html>
