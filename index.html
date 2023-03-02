@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <title>Weather</title>
     <link rel="stylesheet" href="./css/modern-normalize.css">
@@ -48,11 +48,10 @@
                 <h3>min</h3>
                 <span>-2°</span>
               </div>
-
-              <div class="section__btns">
-                <button class="btn first">today</button>
-                <button class="btn first">5 days</button>
-              </div>
+            </div>
+            <div class="section__btn">
+              <button class="btn first">today</button>
+              <button class="btn first">5 days</button>
             </div>
           </div>
         </section>
@@ -60,7 +59,7 @@
         <article>
           <div class="container__off">
             <p class="legend">Who cares about the clouds when we're together? Just sing a song and bring the sunny weather.</p>
-            <span class="legend-author">Dale Evans</span>
+            <p class="legend author">Dale Evans</p>
           </div>
         </article>
 
@@ -70,19 +69,22 @@
 
               <p class="square-day">8th Sat</p>
 
-              <div class="square-time">
-                <span class="month">-2°</span>
-                <div class="line"></div>
-                <span class="clock">-2°</span>
-              </div>
+              <div class="day-details">
+                <div class="square-time">
+                  <p class="month">february</p>
+                  <div class="v-line"></div>
+                  <p class="clock">00H00H00</span>
+                </div>
 
-              <div class="square-sunny">
-                <svg id="dawn"></svg>
-                <span class="dawn">07:04</span>
-                <div class="line"></div>
-                <svg id="sunset"></svg>
-                <span class="sunset">17:05</span>
-              </div>
+                <div class="square-sunny">
+                  <svg id="dawn"></svg>
+                  <span class="dawn">07:04</span>
+                  <div class="v-line"></div>
+                  <svg id="sunset"></svg>
+                  <span class="sunset">17:05</span>
+                </div>
+            </div>
+
             </div>
           </div>
         </section>
