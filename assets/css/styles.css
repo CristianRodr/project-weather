@@ -156,6 +156,7 @@ article .container__off {
   align-items: flex-end;
   flex-direction: column;
   margin-right: 110px;  
+  position: relative;
 }
 
 .legend {
@@ -256,6 +257,11 @@ article .container__off {
 #dawn, #sunset {
   fill: #FF6B09;
   margin-right: 10px;
+}
+
+#comillas {
+  position: absolute;
+  top: -20px;
 }
 
 /* CSS GP-001 */
@@ -428,6 +434,7 @@ article .container__off {
   gap: 20px;
   width: 320px;
   padding: 0 20px;
+  position: relative;
 }
 
 .legend {
@@ -443,6 +450,10 @@ article .container__off {
 
 .author {
   font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
 }
 
 .two {
@@ -534,6 +545,11 @@ article .container__off {
 #dawn, #sunset {
   fill: #FF6B09;
   margin-right: 10px;
+}
+
+#comillas {
+  position: absolute;
+  top: -20px;
 }
 
 /* CSS GP-001 */
@@ -700,6 +716,7 @@ article .container__off {
   flex-direction: column;
   margin-right: 0;
   gap: 20px;
+  position: relative;
 }
 
 .legend {
@@ -808,6 +825,10 @@ article .container__off {
   margin-right: 10px;
 }
 
+#comillas {
+  position: absolute;
+  top: -20px;
+}
 /* CSS GP-001 */
 
 }
@@ -1070,6 +1091,11 @@ article .container__off {
   #dawn, #sunset {
     fill: #FF6B09;
     margin-right: 10px;
+  }
+
+  #comillas {
+    position: absolute;
+    top: -20px;
   }
   /* CSS GP-001 */
 
