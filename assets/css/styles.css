@@ -732,6 +732,10 @@ article .container__off {
 
 .author {
   font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
 }
 
 .two {
@@ -1006,6 +1010,10 @@ article .container__off {
 
   .author {
     font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
   }
 
   .two {
