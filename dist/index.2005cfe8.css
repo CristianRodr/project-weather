@@ -1,0 +1,581 @@
+:root {
+  --first: #102136cc;
+  --second: #eb630885;
+  --third: gray;
+  --fourth: white;
+  --five: #0906eb;
+  --six: #ea9a05;
+  --seven: #067806;
+  --eigth: #10213699;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  font-style: normal;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contenedor {
+    width: 280px;
+    height: 400px;
+    background-color: var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
+    border-radius: 34px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .average, .contparams {
+    display: block;
+  }
+
+  .average {
+    margin-bottom: 8px;
+    margin-left: 30px;
+  }
+
+  .contparams .medida {
+    margin-left: 30px;
+  }
+
+  .contenedor__tag {
+    width: 110px;
+    height: 28px;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    left: 95px;
+  }
+
+  .contenedor__hide {
+    width: 72px;
+    height: 18px;
+    color: var(--second);
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration-line: underline;
+  }
+
+  .contenedor__button {
+    width: 28px;
+    height: 28px;
+    background-color: var(--third);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+  }
+
+  .contenedor__grafica {
+    width: 822px;
+    height: 430px;
+    position: absolute;
+    top: 88px;
+    left: 10px;
+  }
+
+  .contenedor__parametros {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .contenedor__parametros li {
+    color: var(--fourth);
+    opacity: .54;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+
+  .medida {
+    align-items: center;
+    display: flex;
+  }
+
+  .temp, .hum, .wind, .atm {
+    width: 12px;
+    height: 12px;
+  }
+
+  .temp {
+    background-color: var(--second);
+    margin-right: 3px;
+  }
+
+  .hum {
+    background-color: var(--five);
+    margin-right: 3px;
+  }
+
+  .wind {
+    background-color: var(--six);
+    margin-right: 3px;
+  }
+
+  .atm {
+    background-color: var(--seven);
+    margin-right: 3px;
+  }
+
+  .celsius {
+    color: var(--second);
+  }
+
+  .percent {
+    color: var(--five);
+  }
+
+  .seconds {
+    color: var(--six);
+  }
+
+  .meters {
+    color: var(--seven);
+  }
+
+  .contenedor__parametros__indicadores {
+    display: none;
+  }
+
+  .contenedor__tabla {
+    width: 268px;
+    height: 150px;
+    margin-top: 22px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .contenedor__tabla__medidas {
+    width: 50px;
+  }
+
+  .contenedor__tabla__medidas li {
+    color: var(--fourth);
+    opacity: .54;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+
+  .contenedor__tabla__fechas {
+    width: 100%;
+    height: 18px;
+    z-index: 1;
+    align-self: last baseline;
+  }
+
+  .historial {
+    display: flex;
+  }
+
+  .historial__fecha {
+    color: var(--fourth);
+    opacity: .54;
+    margin-right: 90px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor {
+    width: 620px;
+    height: 462px;
+    background-color: var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
+    border-radius: 34px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .contenedor__tag {
+    width: 110px;
+    height: 28px;
+    display: flex;
+    position: absolute;
+    top: 36px;
+    left: 270px;
+  }
+
+  .contenedor__hide {
+    width: 72px;
+    height: 18px;
+    color: var(--second);
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration-line: underline;
+  }
+
+  .contenedor__button {
+    width: 28px;
+    height: 28px;
+    background-color: var(--third);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+  }
+
+  .contenedor__grafica {
+    width: 589px;
+    height: 277px;
+    position: absolute;
+    top: 88px;
+    left: 90px;
+  }
+
+  .contenedor__parametros {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .contparams {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .average {
+    width: 150px;
+    height: 46px;
+    text-align: right;
+    align-items: baseline;
+    display: flex;
+  }
+
+  .contenedor__parametros li {
+    color: var(--fourth);
+    opacity: .54;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+
+  .medida {
+    align-items: center;
+    display: flex;
+  }
+
+  .temp, .hum, .wind, .atm {
+    width: 12px;
+    height: 12px;
+  }
+
+  .temp {
+    background-color: var(--second);
+    margin-right: 3px;
+  }
+
+  .hum {
+    background-color: var(--five);
+    margin-right: 3px;
+  }
+
+  .wind {
+    background-color: var(--six);
+    margin-right: 3px;
+  }
+
+  .atm {
+    background-color: var(--seven);
+    margin-right: 3px;
+  }
+
+  .celsius {
+    color: var(--second);
+  }
+
+  .percent {
+    color: var(--five);
+  }
+
+  .seconds {
+    color: var(--six);
+  }
+
+  .meters {
+    color: var(--seven);
+  }
+
+  .contenedor__parametros__indicadores {
+    width: 156px;
+    height: 20px;
+    color: var(--fourth);
+    opacity: .54;
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    position: relative;
+    left: -180px;
+    rotate: -90deg;
+  }
+
+  .contenedor__tabla {
+    width: 589px;
+    height: 277px;
+    margin-top: -67px;
+    display: flex;
+    position: absolute;
+    right: 10%;
+  }
+
+  .contenedor__tabla__medidas {
+    width: 50px;
+  }
+
+  .contenedor__tabla__medidas li {
+    color: var(--fourth);
+    opacity: .54;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+
+  .contenedor__tabla__medidas li:last-child {
+    margin-bottom: 0;
+  }
+
+  .contenedor__tabla__fechas {
+    width: 100%;
+    height: 18px;
+    z-index: 1;
+    align-self: last baseline;
+    margin-bottom: 23px;
+  }
+
+  .historial {
+    display: flex;
+  }
+
+  .historial__fecha {
+    color: var(--fourth);
+    opacity: .54;
+    margin-left: 5px;
+    margin-right: 120px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    width: 900px;
+    height: 540px;
+    background-color: var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
+    border-radius: 34px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .average, .contparams {
+    display: flex;
+  }
+
+  .average {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .contparams .medida {
+    margin-right: 20px;
+  }
+
+  .contenedor__tag {
+    width: 110px;
+    height: 28px;
+    display: flex;
+    position: absolute;
+    top: 26px;
+    left: 400px;
+  }
+
+  .contenedor__hide {
+    width: 72px;
+    height: 18px;
+    color: var(--second);
+    align-self: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration-line: underline;
+  }
+
+  .contenedor__button {
+    width: 28px;
+    height: 28px;
+    background-color: var(--third);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    display: flex;
+  }
+
+  .contenedor__grafica {
+    width: 822px;
+    height: 430px;
+    position: absolute;
+    top: 88px;
+    left: 50px;
+  }
+
+  .contenedor__parametros {
+    width: 100%;
+    height: 18px;
+    display: flex;
+  }
+
+  .contenedor__parametros li {
+    color: var(--fourth);
+    opacity: .54;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+
+  .medida {
+    align-items: center;
+    display: flex;
+  }
+
+  .temp, .hum, .wind, .atm {
+    width: 12px;
+    height: 12px;
+  }
+
+  .temp {
+    background-color: var(--second);
+    margin-right: 3px;
+  }
+
+  .hum {
+    background-color: var(--five);
+    margin-right: 3px;
+  }
+
+  .wind {
+    background-color: var(--six);
+    margin-right: 3px;
+  }
+
+  .atm {
+    background-color: var(--seven);
+    margin-right: 3px;
+  }
+
+  .celsius {
+    color: var(--second);
+  }
+
+  .percent {
+    color: var(--five);
+  }
+
+  .seconds {
+    color: var(--six);
+  }
+
+  .meters {
+    color: var(--seven);
+  }
+
+  .contenedor__parametros__indicadores {
+    width: 156px;
+    height: 20px;
+    color: var(--fourth);
+    opacity: .54;
+    margin-top: 170px;
+    margin-left: -68px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    rotate: -90deg;
+  }
+
+  .contenedor__tabla {
+    width: 700px;
+    height: 350px;
+    margin-top: -160px;
+    margin-left: 40px;
+    display: flex;
+  }
+
+  .contenedor__tabla__medidas {
+    width: 50px;
+  }
+
+  .contenedor__tabla__medidas li {
+    color: var(--fourth);
+    opacity: .54;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+
+  .contenedor__tabla__fechas {
+    width: 100%;
+    height: 18px;
+    z-index: 1;
+    align-self: last baseline;
+  }
+
+  .historial {
+    display: flex;
+  }
+
+  .historial__fecha {
+    color: var(--fourth);
+    opacity: .54;
+    margin-right: 130px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    list-style: none;
+  }
+}
+
+/*# sourceMappingURL=index.2005cfe8.css.map */
