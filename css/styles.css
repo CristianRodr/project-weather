@@ -4,11 +4,21 @@ body {
   background-image: url("../images/Fondo\ 1x.png");
 }
 
-.clima__dias {
+.container {
   background: rgba(16, 33, 54, 0.8);
   box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
   border-radius: 34px;
   min-width: 290px;
+}
+
+.clima__dias {
+  display: flex;
+  justify-content: space-around;
+}
+
+.clima__dias--cambio {
+  display: flex;
+  flex-direction: column;
 }
 
 .dias {
@@ -19,7 +29,16 @@ body {
   padding: 0;
 }
 
-.details__conditions {
+.details__conditions,
+.details__conditions1,
+.details__conditions2,
+.details__conditions3,
+.details__conditions4 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.clic__moreInfo {
   border: 1px solid #ffffff33;
   border-radius: 25px;
   margin-top: 43px;
@@ -27,7 +46,7 @@ body {
   margin-bottom: 8px;
 }
 
-.details__conditions:hover {
+.clic__moreInfo:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -61,7 +80,7 @@ body {
 
 .min__max {
   display: flex;
-  gap: 40px;
+  gap: 15px;
   margin-left: -45px;
 }
 
@@ -76,7 +95,11 @@ body {
     margin-top: 15px
   }*/
 
-.verMas {
+.verMas,
+.verMas1,
+.verMas2,
+.verMas3,
+.verMas4 {
   margin-top: 15px;
   color: #ffffff;
   font-size: 12px;
@@ -101,6 +124,10 @@ body {
 
 li {
   list-style: none;
+}
+
+.new__class {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
