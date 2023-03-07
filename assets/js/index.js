@@ -35,10 +35,19 @@ setInterval(function () {
     month: "long",
   };
 
-  labelDate.textContent = new Intl.DateTimeFormat("local", optionClock).format(now);
-  labelDay.textContent = new Intl.DateTimeFormat("local", optionDay).format(now);
-  labelAbreDay.textContent = new Intl.DateTimeFormat("local", optionAbre).format(now);
-  labelMonth.textContent = new Intl.DateTimeFormat("local", optionMonth).format(now);
+  labelDate.textContent = new Intl.DateTimeFormat("local", optionClock).format(
+    now
+  );
+  labelDay.textContent = new Intl.DateTimeFormat("local", optionDay).format(
+    now
+  );
+  labelAbreDay.textContent = new Intl.DateTimeFormat(
+    "local",
+    optionAbre
+  ).format(now);
+  labelMonth.textContent = new Intl.DateTimeFormat("local", optionMonth).format(
+    now
+  );
 }, 1000);
 
 //Toma del Input
@@ -59,7 +68,6 @@ const tomaCiudadInput = function () {
 
 tomaCiudadInput();
 
-
 const busquedaClima = async function (busqueda) {
   try {
     const posClima = await fetch(`
@@ -77,7 +85,10 @@ const busquedaClima = async function (busqueda) {
     console.log(icon_Nubes);
 
     if (icon_Nubes.includes("Clouds")) {
-      icon.setAttribute("href", "./assets/vectores/icomoon/symbol-defs.svg#icon-icon-Nubes");
+      icon.setAttribute(
+        "href",
+        "./assets/vectores/icomoon/symbol-defs.svg#icon-Nubes"
+      );
     }
 
     temperatura.textContent = Math.trunc(main.temp);
@@ -118,8 +129,7 @@ const busquedaClima = async function (busqueda) {
     }
 
     //console.log(convertTime(dataClima.dt, dataClima.timezone));
-    dte = convertTime(dataClima.dt, dataClima.timezone);
-
+    convertTime(dataClima.dt, dataClima.timezone);
   } catch (err) {
     alert(err);
   }
