@@ -5,39 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Weather</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <script
+      type="text/JavaScript"
+      src=" https://MomentJS.com/downloads/moment.js"
+    ></script>
+    <!--<link rel="stylesheet" href="./assets/css/modern-normalize.css" />-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <script type="module" defer src="/assets/js/index.js"></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <form class="header__form">
-          <svg width="22" height="22" id="ubicacion"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-icon-location"></use></svg>
+          <svg width="22" height="22" id="ubicacion">
+            <use
+              xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-icon-location"
+            ></use>
+          </svg>
           <label>
-            <input type="text" placeholder="Enter the city" class="form-countries">
+            <input
+              type="text"
+              name="ciudad"
+              placeholder="Enter the city"
+              class="form-countries"
+            />
           </label>
-          <svg width="22" height="22" id="star"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Star-1"></use></svg>
+          <svg width="22" height="22" id="star">
+            <use
+              xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Star-1"
+            ></use>
+          </svg>
         </form>
       </div>
     </header>
 
     <main>
       <div class="container">
-
         <section class="section one">
-
           <div class="container__off">
-
             <div class="temp__square">
-
               <div class="temp-icon">
-                <svg id="nubes" width="35" height="35"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Nubes"></use></svg>
+                <svg id="nubes" width="35" height="35">
+                  <use
+                    class="clima-icon"
+                    href="./assets/vectores/icomoon/symbol-defs.svg#icon-Nubes"
+                  ></use>
+                </svg>
                 <p class="square-country off">Kyiv, UA</p>
               </div>
 
@@ -46,13 +68,13 @@
               <div class="temp-text">
                 <div>
                   <h3 class="off">min</h3>
-                  <p>-2°</p>
+                  <p class="min">-2°</p>
                 </div>
                 <div class="v-line siceL"></div>
                 <div>
-                  <h3 class="off">min</h3>
-                  <p>-2°</p>
-              </div>
+                  <h3 class="off">max</h3>
+                  <p class="max">-2°</p>
+                </div>
               </div>
             </div>
             <div class="section__btn">
@@ -63,45 +85,64 @@
         </section>
 
         <section class="section two">
-
           <div class="container__off">
             <div class="date__square">
-
-              <p class="square-day">8th Sat</p>
+              <p class="square-day">8</p>
+              <p class="square-th">
+                th <span class="abbreviation-day">Sat</span>
+              </p>
+              <!--              <p class="abbreviation-day"> Sat</p>-->
 
               <div class="day-details">
                 <div class="square-time">
                   <p class="month">february</p>
                   <div class="v-line"></div>
-                  <p class="clock">00:00:00</span>
+                  <p class="clock">00:00:00</p>
                 </div>
 
                 <div class="square-sunny">
                   <svg id="dawn" width="20" height="20">
-                    <use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Icon-Amanecer"></use>
+                    <use
+                      xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Icon-Amanecer"
+                    ></use>
                   </svg>
                   <p class="dawn">07:04</p>
                   <div class="v-line"></div>
-                  <svg id="sunset" width="20" height="20"><use xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Icon-puesta"></use>
+                  <svg id="sunset" width="20" height="20">
+                    <use
+                      xlink:href="./assets/vectores/icomoon/symbol-defs.svg#icon-Icon-puesta"
+                    ></use>
                   </svg>
-                  <p class="sunset">17:05</span>
+                  <p class="sunset">17:05</p>
                 </div>
-            </div>
-
+              </div>
             </div>
           </div>
           <article>
             <div class="container__off">
-              <svg id="comillas" width="50" height="46" viewBox="0 0 50 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2" d="M31.04 19.8999L31.04 -1.60652e-06L49.4165 0L49.4165 15.7104C49.4165 24.2163 48.4009 30.3735 46.3696 34.1821C43.7036 39.2603 39.4824 43.1006 33.7061 45.7031L29.5166 39.0381C33.0078 37.5781 35.5786 35.3882 37.229 32.4683C38.8794 29.6118 39.7998 25.4224 39.9902 19.8999L31.04 19.8999ZM1.52344 19.8999L1.52344 -4.18694e-06L19.8999 -2.58042e-06L19.8999 15.7104C19.8999 24.2163 18.8843 30.3735 16.853 34.1821C14.187 39.2603 9.96582 43.1006 4.18945 45.7031L5.82676e-07 39.0381C3.49121 37.5781 6.06201 35.3882 7.7124 32.4683C9.36279 29.6118 10.2832 25.4224 10.4736 19.8999L1.52344 19.8999Z" fill="white"/>
-                </svg>                
-              <p class="legend">Who cares about the clouds when we're together? Just sing a song and bring the sunny weather.</p>
+              <svg
+                id="comillas"
+                width="50"
+                height="46"
+                viewBox="0 0 50 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  d="M31.04 19.8999L31.04 -1.60652e-06L49.4165 0L49.4165 15.7104C49.4165 24.2163 48.4009 30.3735 46.3696 34.1821C43.7036 39.2603 39.4824 43.1006 33.7061 45.7031L29.5166 39.0381C33.0078 37.5781 35.5786 35.3882 37.229 32.4683C38.8794 29.6118 39.7998 25.4224 39.9902 19.8999L31.04 19.8999ZM1.52344 19.8999L1.52344 -4.18694e-06L19.8999 -2.58042e-06L19.8999 15.7104C19.8999 24.2163 18.8843 30.3735 16.853 34.1821C14.187 39.2603 9.96582 43.1006 4.18945 45.7031L5.82676e-07 39.0381C3.49121 37.5781 6.06201 35.3882 7.7124 32.4683C9.36279 29.6118 10.2832 25.4224 10.4736 19.8999L1.52344 19.8999Z"
+                  fill="white"
+                />
+              </svg>
+              <p class="legend">
+                Who cares about the clouds when we're together? Just sing a song
+                and bring the sunny weather.
+              </p>
               <p class="legend author">Dale Evans</p>
             </div>
           </article>
         </section>
       </div>
     </main>
-
   </body>
 </html>
