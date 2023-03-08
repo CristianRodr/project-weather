@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./../css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +17,25 @@
     <title>Weather APP</title>
   </head>
   <body>
+
+    <header class="header">4
+      <div class="container">
+        <form class="header__form">
+          <svg width="22" height="22" id="ubicacion"><use xlink:href="./../images/Icons.svg#icon-icon-location"></use></svg>
+          <label>
+            <input type="text" placeholder="Enter the city" class="form-countries">
+          </label>
+          <svg width="22" height="22" id="star"><use xlink:href="./../images/Icons.svg#icon-Star-1"></use></svg>
+        </form>
+      </div>
+    </header>
+
+    <div class="section__btn">
+      <a href="./../index.html"><button class="btn first">today</button></a>
+      <a href="./../pages/five-days.html"><button class="btn first">5 days</button></a>
+    </div>
+
+
     <div class="container__second">
       <div class="clima__dias">
         <div class="clima__dias--cambio">
