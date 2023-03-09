@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="./../css/modern-normalize.css"
     />
     <link rel="stylesheet" href="./../css/styles.css">
 
@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <title>Weather APP</title>
+    <script type="module" src="./../assets/js/index.js"></script>
   </head>
   <body>
 
@@ -30,11 +31,12 @@
       </div>
     </header>
 
-    <div class="section__btn">
-      <a href="./../index.html"><button class="btn first">today</button></a>
-      <a href="./../pages/five-days.html"><button class="btn first">5 days</button></a>
-    </div>
-
+    <section class="btn__five-days">
+      <div class="section__btn">
+        <a href="./../index.html"><button class="btn first">today</button></a>
+        <a href="./../pages/five-days.html"><button class="btn first">5 days</button></a>
+      </div>
+    </section>
 
     <div class="container__second">
       <div class="clima__dias">
@@ -44,7 +46,7 @@
               <p>day</p>
               <p>date</p>
               <svg class="" width="35" height="35">
-                <use xlink:href="./images/icons.svg#icon-Icono2"></use>
+                <use xlink:href="./../images/Icons.svg#icon-Icono2"></use>
               </svg>
 
               <ul class="min__max">
@@ -63,7 +65,7 @@
             <p>day</p>
             <p>date</p>
             <svg class="" width="35" height="35">
-              <use xlink:href="./images/icons.svg#icon-Icono2"></use>
+              <use xlink:href="./../images/icons.svg#icon-Icono2"></use>
             </svg>
 
             <ul class="min__max">
@@ -81,7 +83,7 @@
             <p>day</p>
             <p>date</p>
             <svg class="" width="35" height="35">
-              <use xlink:href="./images/icons.svg#icon-Icono2"></use>
+              <use xlink:href="./../images/icons.svg#icon-Icono2"></use>
             </svg>
 
             <ul class="min__max">
@@ -99,7 +101,7 @@
             <p>day</p>
             <p>date</p>
             <svg class="" width="35" height="35">
-              <use xlink:href="./images/icons.svg#icon-Icono2"></use>
+              <use xlink:href="./../images/icons.svg#icon-Icono2"></use>
             </svg>
 
             <ul class="min__max">
@@ -117,7 +119,7 @@
             <p>day</p>
             <p>date</p>
             <svg class="" width="35" height="35">
-              <use xlink:href="./images/icons.svg#icon-Icono2"></use>
+              <use xlink:href="./../images/icons.svg#icon-Icono2"></use>
             </svg>
 
             <ul class="min__max">
@@ -135,25 +137,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">19°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -163,25 +165,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -191,25 +193,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -219,25 +221,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -247,25 +249,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -277,25 +279,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -305,25 +307,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -333,25 +335,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -361,25 +363,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -389,25 +391,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -419,25 +421,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">20°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -447,25 +449,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -475,25 +477,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -503,25 +505,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -531,25 +533,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -561,25 +563,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/Icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -589,25 +591,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -617,25 +619,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -645,25 +647,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -673,25 +675,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -703,25 +705,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">22°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -731,25 +733,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -759,25 +761,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -787,25 +789,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -815,25 +817,25 @@
         <div class="clic__moreInfo">
           <p class="parametros">00:00</p>
           <svg class="icons__conditions" width="35" height="35.6">
-            <use xlink:href="./images/icons.svg#icon-Icono1"></use>
+            <use xlink:href="./../images/icons.svg#icon-Icono1"></use>
           </svg>
           <p class="parametros__temp">21°</p>
           <div class="magnitudes">
             <div class="magnitudes--ajuste">
               <svg class="" width="17.56" height="20">
-                <use xlink:href="./images/icons.svg#icon-Presion"></use>
+                <use xlink:href="./../images/icons.svg#icon-Presion"></use>
               </svg>
               <span>772mm</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="18.79" height="20">
-                <use xlink:href="./images/icons.svg#icon-Humedad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Humedad"></use>
               </svg>
               <span>54%</span>
             </div>
             <div class="magnitudes--ajuste">
               <svg class="" width="20" height="16.7">
-                <use xlink:href="./images/icons.svg#icon-Velocidad"></use>
+                <use xlink:href="./../images/icons.svg#icon-Velocidad"></use>
               </svg>
               <span>3.7 m/s</span>
             </div>
@@ -879,3 +881,4 @@
     <script type="module" src="./../js/index.js"></script>
   </body>
 </html>
+4444444444
