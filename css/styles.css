@@ -1112,19 +1112,20 @@ body {
   background-image: url("../images/Fondo\ 1x.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .container__second {
   background: rgba(16, 33, 54, 0.8);
   box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
   border-radius: 34px;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .clima__dias {
   display: flex;
   justify-content: space-around;
+  margin: 0 35px;
 }
 
 .clima__dias--cambio {
@@ -1191,7 +1192,7 @@ body {
 
 .min__max {
   display: flex;
-  gap: 15px;
+  gap: 3px;
   margin-left: -45px;
   margin-top: 9.97px;
 }
@@ -1243,6 +1244,7 @@ li {
   display: flex;
 }
 
+.clic__moreInfo:nth-child(3),
 .clic__moreInfo:nth-child(4),
 .clic__moreInfo:nth-child(5),
 .clic__moreInfo:nth-child(6),
@@ -1263,11 +1265,14 @@ li {
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
   }
 
   .container__second {
-    width: 100%;
+    width: 620px;
+  }
+
+  .clima__dias {
+    margin: 0 40px;
   }
 
   .parametros p {
@@ -1279,6 +1284,7 @@ li {
   .min__max {
     font-size: 14px;
     margin-top: 15px;
+    gap: 10px;
   }
 
   .min__max span {
@@ -1319,6 +1325,7 @@ li {
     margin-left: 38px;
   }
 
+  .clic__moreInfo:nth-child(3),
   .clic__moreInfo:nth-child(4),
   .clic__moreInfo:nth-child(5) {
     display: block;
@@ -1333,11 +1340,14 @@ li {
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
   }
 
   .container__second {
-    width: 100%;
+    width: 1060px;
+  }
+
+  .clima__dias {
+    margin: 0 130px;
   }
 
   .parametros p {
@@ -1346,9 +1356,18 @@ li {
     line-height: 22px;
   }
 
+  .details__conditions,
+  .details__conditions1,
+  .details__conditions2,
+  .details__conditions3,
+  .details__conditions4 {
+    margin: 0 50px;
+  }
+
   .min__max {
     font-size: 18px;
     margin-top: 34.97px;
+    gap: 15px;
   }
 
   .min__max span {
@@ -1396,3 +1415,502 @@ li {
 /* CSS GP-002 ------------------------------------------ */
 
 /* CSS GP-003 ------------------------------------------ */
+
+:root {
+  --first: rgba(16, 33, 54, 0.8);
+  --second: rgba(235, 99, 8, 0.521);
+  --third: gray;
+  --fourth: white;
+  --five:rgba(9, 6, 235, 1);
+  --six:rgba(234, 154, 5, 1);
+  --seven: rgba(6, 120, 6, 1);
+  --eigth: rgba(16, 33, 54, 0.6);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contenedor{
+    width: 280px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color:var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
+    border-radius: 34px;
+    position: relative;
+  }
+  .average, .contparams{
+    display: block;
+  }
+  .average{
+    margin-left: 30px;
+    margin-bottom: 8px;
+  }
+  .contparams .medida{
+    margin-left: 30px;
+  }
+  .contenedor__tag{
+    width: 135px;
+    height: 28px;
+    position: absolute;
+    top: 26px;
+    left: 95px;
+    display: flex;
+  }
+  .contenedor__hide{
+    width: 100px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    align-self: center;
+    text-decoration-line: underline;
+    color:var(--second);
+  }
+  .contenedor__button{
+    width: 28px;
+    height: 28px;
+    background-color: var(--third);
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contenedor__grafica{
+    width: 822px;
+    height: 430px;
+    position: absolute;
+    top: 88px;
+    left: 10px;
+  }
+  .contenedor__parametros{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .contenedor__parametros li{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--fourth);
+    opacity: 0.54;
+  }
+  .medida{
+    display: flex;
+    align-items: center;
+  }
+  .temp ,.hum ,.wind ,.atm{
+    width: 12px;
+    height: 12px;
+  }
+  .temp{
+    background-color:var(--second);
+    margin-right: 3px;
+  }
+  .hum{
+    background-color:var(--five);
+    margin-right: 3px;
+  }
+  .wind{
+    background-color: var(--six);
+    margin-right: 3px;
+  }
+  .atm{
+    background-color: var(--seven);
+    margin-right: 3px;
+  }
+  .celsius{
+    color:var(--second);
+  }
+  .percent{
+    color:var(--five);
+  }
+  .seconds{
+    color:var(--six);
+  }
+  .meters{
+    color:var(--seven);
+  }
+  .contenedor__parametros__indicadores{
+    display: none;
+  }
+  .contenedor__tabla{
+    width: 268px;
+    height: 150px;
+    margin-top: 22px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+  }
+  .contenedor__tabla__medidas{
+    width: 50px;
+  }
+  .contenedor__tabla__medidas li{
+    margin-bottom: 10px;
+    list-style: none;
+    color:var(--fourth);
+    opacity: 0.54;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contenedor__tabla__fechas{
+    width: 100%;
+    height: 18px;
+    align-self: last baseline;
+    z-index: 1;
+  }
+  .historial{
+    display: flex;
+  }
+  .historial__fecha{
+    margin-right: 90px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--fourth);
+    list-style: none;
+    opacity: 0.54;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor{
+    width: 620px;
+    height: 462px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color:var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
+    border-radius: 34px;
+    position: relative;
+  }
+  .contenedor__tag{
+    width: 135px;
+    height: 28px;
+    position: absolute;
+    top: 36px;
+    left: 270px;
+    display: flex;
+  }
+  .contenedor__hide{
+    width: 100px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    align-self: center;
+    text-decoration-line: underline;
+    color:var(--second);
+  }
+  .contenedor__button{
+    width: 28px;
+    height: 28px;
+    background-color:var(--third);
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contenedor__grafica{
+    width: 589px;
+    height: 277px;
+    position: absolute;
+    top: 88px;
+    left: 90px;
+  }
+   .contenedor__parametros{
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .contparams{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .average{
+    width: 150px;
+    height: 46px;
+    display: flex;
+    align-items: baseline;
+    text-align: right;
+  }
+  .contenedor__parametros li{
+    margin-right: 25px;
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--fourth);
+    opacity: 0.54;
+  }
+  .medida{
+    display: flex;
+    align-items: center;
+  }
+  .temp ,.hum ,.wind ,.atm{
+    width: 12px;
+    height: 12px;
+  }
+  .temp{
+    background-color:var(--second);
+    margin-right: 3px;
+  }
+  .hum{
+    background-color:var(--five);
+    margin-right: 3px;
+  }
+  .wind{
+    background-color:var(--six);
+    margin-right: 3px;
+  }
+  .atm{
+    background-color:var(--seven);
+    margin-right: 3px;
+  }
+  .celsius{
+    color:var(--second);
+  }
+  .percent{
+    color:var(--five);
+  }
+  .seconds{
+    color:var(--six);
+  }
+  .meters{
+    color:var(--seven);
+  }
+  .contenedor__parametros__indicadores{
+    width:156px;
+    height: 20px;
+    rotate: -90deg;
+    margin-top: 80px;
+    left: -180px;
+    color: var(--fourth);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.54;
+    position: relative;
+  }
+  .contenedor__tabla{
+    width: 589px;
+    height: 277px;
+    margin-top: -67px;
+    display: flex;
+    position: absolute;
+    right: 10%;
+  }
+  .contenedor__tabla__medidas{
+    width: 50px;
+  }
+  .contenedor__tabla__medidas li{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style: none;
+    color:var(--fourth);
+    opacity: 0.54;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contenedor__tabla__medidas li:last-child{
+    margin-bottom: 0px;
+  }
+  .contenedor__tabla__fechas{
+    width: 100%;
+    height: 18px;
+    align-self: last baseline;
+    z-index: 1;
+    margin-bottom: 23px;
+  }
+  .historial{
+    display: flex;
+  }
+  .historial__fecha{
+    margin-right: 120px;
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--fourth);
+    list-style: none;
+    opacity: 0.54;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor{
+    width: 900px;
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color:var(--first);
+    box-shadow: 0px 8px 43px var(--eigth);
+    border-radius: 34px;
+    position: relative;
+  }
+  .average, .contparams{
+    display: flex;
+  }
+  .average{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .contparams .medida{
+    margin-right: 20px;
+  }
+  .contenedor__tag{
+    width: 135px;
+    height: 28px;
+    position: absolute;
+    top: 26px;
+    left: 400px;
+    display: flex;
+  }
+  .contenedor__hide{
+    width: 100px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    align-self: center;
+    text-decoration-line: underline;
+    color:var(--second);
+  }
+  .contenedor__button{
+    width: 28px;
+    height: 28px;
+    background-color:var(--third);
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .contenedor__grafica{
+    width: 822px;
+    height: 430px;
+    position: absolute;
+    top: 88px;
+    left: 50px;
+  }
+  .contenedor__parametros{
+    width: 100%;
+    height: 18px;
+    display: flex;
+  }
+  .contenedor__parametros li{
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--fourth);
+    opacity: 0.54;
+  }
+  .medida{
+    display: flex;
+    align-items: center;
+  }
+  .temp ,.hum ,.wind ,.atm{
+    width: 12px;
+    height: 12px;
+  }
+  .temp{
+    background-color:var(--second);
+    margin-right: 3px;
+  }
+  .hum{
+    background-color:var(--five);
+    margin-right: 3px;
+  }
+  .wind{
+    background-color:var(--six);
+    margin-right: 3px;
+  }
+  .atm{
+    background-color:var(--seven);
+    margin-right: 3px;
+  }
+  .celsius{
+    color:var(--second);
+  }
+  .percent{
+    color:var(--five);
+  }
+  .seconds{
+    color:var(--six);
+  }
+  .meters{
+    color:var(--seven);
+  }
+  .contenedor__parametros__indicadores{
+    width:156px;
+    height: 20px;
+    rotate: -90deg;
+    margin-top: 170px;
+    margin-left: -68px;
+    color:var(--fourth);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.54;
+  }
+  .contenedor__tabla{
+    width: 700px;
+    height: 350px;
+    margin-top: -160px;
+    margin-left: 40px;
+    display: flex;
+  }
+  .contenedor__tabla__medidas{
+    width: 50px;
+  }
+  .contenedor__tabla__medidas li{
+    margin-bottom: 20px;
+    list-style: none;
+    color:var(--fourth);
+    opacity: 0.54;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contenedor__tabla__fechas{
+    width: 100%;
+    height: 18px;
+    align-self: last baseline;
+    z-index: 1;
+  }
+  .historial{
+    display: flex;
+  }
+  .historial__fecha{
+    margin-right: 130px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--fourth);
+    list-style: none;
+    opacity: 0.54;
+  }
+}

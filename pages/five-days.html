@@ -18,7 +18,7 @@
   </head>
   <body>
 
-    <header class="header">4
+    <header class="header">
       <div class="container">
         <form class="header__form">
           <svg width="22" height="22" id="ubicacion"><use xlink:href="./../images/Icons.svg#icon-icon-location"></use></svg>
@@ -841,6 +841,36 @@
         </div>
       </div>
     </div>
+
+
+    <div class="contenedor">
+      <div class="contenedor__tag">
+        <div class="contenedor__hide">
+          Hide Chart
+        </div>
+        <button type="button" class="contenedor__button"><img src="./assets/css/images/Vector 2 (1).png" alt=""></button>
+      </div>
+      <div class="contenedor__grafica">
+        <ul class="contenedor__parametros">
+          <div class="average"><li>AVERAGE :</li></div>
+          <div class="contparams">
+          <li class="medida"><div class="temp"></div> - Temperature,<span class="celsius">C°</span></li>
+          <li class="medida"><div class="hum"></div> - Humidity,<span class="percent">%</span></li>
+          <li class="medida"><div class="wind"></div> - Wind Speed,<span class="seconds">m/s</span></li>
+          <li class="medida"><div class="atm"></div> - Atmosphere Pressure,<span class="meters">m/m</span></li>
+          </div>
+        </ul>
+        <div class="contenedor__parametros__indicadores">
+          <p>Value of Indicators</p>
+        </div>
+        <div class="contenedor__tabla">
+            <canvas id="acquisitions"></canvas>
+        </div>
+        </div>
+      </div>
+
+
+
 
     <script type="module" src="./../js/index.js"></script>
   </body>
