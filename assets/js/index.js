@@ -64,3 +64,22 @@ console.log(error);
 }
 
 grafica();
+
+
+const button = document.querySelector(".contenedor__button");
+const contenedor = document.querySelector(".contenedor");
+const picture1 = document.querySelector(".img__button");
+
+let isOpen = false;
+
+button.addEventListener('click', function() {
+  if (!isOpen) {
+    contenedor.style.transform = 'translateY(-100%)';
+    picture1.style.transform = 'rotate(180deg)';
+    isOpen = true;
+  } else {
+    contenedor.style.transform = 'translateY(0)';
+    picture1.style.transform = 'rotate(0deg)';
+    isOpen = false;
+  }
+});

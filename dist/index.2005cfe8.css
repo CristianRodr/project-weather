@@ -12,8 +12,21 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Lato, sans-serif;
+  font-family: Lato;
   font-style: normal;
+}
+
+.contenedor {
+  transition: transform .5s ease-out;
+  transform: translateY(0);
+}
+
+.contenedor__tag {
+  z-index: 1;
+}
+
+.contenedor__principal {
+  overflow: hidden;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -23,7 +36,6 @@
     background-color: var(--first);
     box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -43,12 +55,13 @@
   }
 
   .contenedor__tag {
-    width: 135px;
+    width: 120px;
     height: 28px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    position: absolute;
-    top: 26px;
-    left: 95px;
+    position: relative;
+    top: 35px;
   }
 
   .contenedor__hide {
@@ -71,7 +84,6 @@
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     display: flex;
   }
 
@@ -203,7 +215,6 @@
     background-color: var(--first);
     box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -212,10 +223,11 @@
   .contenedor__tag {
     width: 135px;
     height: 28px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    position: absolute;
-    top: 36px;
-    left: 270px;
+    position: relative;
+    top: 35px;
   }
 
   .contenedor__hide {
@@ -398,7 +410,6 @@
     background-color: var(--first);
     box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
-    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -420,10 +431,11 @@
   .contenedor__tag {
     width: 135px;
     height: 28px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    position: absolute;
-    top: 26px;
-    left: 400px;
+    position: relative;
+    top: 35px;
   }
 
   .contenedor__hide {
