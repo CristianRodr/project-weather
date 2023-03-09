@@ -1252,10 +1252,6 @@ li {
   display: none;
 }
 
-
-
-
-
 @media screen and (min-width: 768px) {
   .hidden--query {
     display: flex;
@@ -1439,11 +1435,13 @@ li {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 30px;
     background-color:var(--first);
     box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
     position: relative;
+    padding-top: 25px;
+    margin-bottom: 25px;
   }
   .average, .contparams{
     display: block;
@@ -1456,12 +1454,8 @@ li {
     margin-left: 30px;
   }
   .contenedor__tag{
-    width: 135px;
-    height: 28px;
-    position: absolute;
-    top: 26px;
-    left: 95px;
     display: flex;
+    justify-content: center;
   }
   .contenedor__hide{
     width: 100px;
@@ -1472,34 +1466,27 @@ li {
     align-self: center;
     text-decoration-line: underline;
     color:var(--second);
+    display: flex;
+    justify-content: center;
   }
   .contenedor__button{
-    width: 28px;
-    height: 28px;
-    background-color: var(--third);
-    margin-left: 10px;
-    border: none;
-    border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
     cursor: pointer;
   }
   .contenedor__grafica{
-    width: 822px;
-    height: 430px;
+    width: 100%;
     position: absolute;
-    top: 88px;
-    left: 10px;
   }
   .contenedor__parametros{
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
   }
   .contenedor__parametros li{
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 5px;
     list-style: none;
     font-weight: 400;
@@ -1548,8 +1535,7 @@ li {
     display: none;
   }
   .contenedor__tabla{
-    width: 268px;
-    height: 150px;
+    width: 100%;
     margin-top: 22px;
     display: flex;
     overflow: hidden;
@@ -1592,11 +1578,12 @@ li {
     height: 462px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
+    margin-top: 25px;
     background-color:var(--first);
     box-shadow: 0px 8px 43px var(--eigth);
     border-radius: 34px;
     position: relative;
+    margin-bottom: 100px;
   }
   .contenedor__tag{
     width: 135px;
@@ -1612,28 +1599,22 @@ li {
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
+    display: flex;
     align-self: center;
     text-decoration-line: underline;
-    color:var(--second);
+    color: var(--second);
+    justify-content: center;
   }
   .contenedor__button{
-    width: 28px;
-    height: 28px;
-    background-color:var(--third);
-    margin-left: 10px;
-    border: none;
-    border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
     cursor: pointer;
   }
   .contenedor__grafica{
-    width: 589px;
-    height: 277px;
     position: absolute;
     top: 88px;
-    left: 90px;
+    left: 50px;
   }
    .contenedor__parametros{
     width: 100%;
@@ -1643,10 +1624,10 @@ li {
   .contparams{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
   }
   .average{
-    width: 150px;
-    height: 46px;
     display: flex;
     align-items: baseline;
     text-align: right;
@@ -1700,8 +1681,8 @@ li {
     width:156px;
     height: 20px;
     rotate: -90deg;
-    margin-top: 80px;
-    left: -180px;
+    margin-top: 120px;
+    left: -105px;
     color: var(--fourth);
     font-weight: 400;
     font-size: 14px;
@@ -1712,10 +1693,11 @@ li {
   .contenedor__tabla{
     width: 589px;
     height: 277px;
-    margin-top: -67px;
+    margin-top: -120px;
     display: flex;
     position: absolute;
-    right: 10%;
+    right: 0%;
+    justify-content: center;
   }
   .contenedor__tabla__medidas{
     width: 50px;
@@ -1766,6 +1748,7 @@ li {
     border-radius: 34px;
     position: relative;
     padding-top: 25px;
+    margin-bottom: 100px;
   }
   .average, .contparams{
     display: flex;
@@ -1797,6 +1780,7 @@ li {
     display: flex;
     cursor: pointer;
     gap: 10px;
+    cursor: pointer;
   }
 
   .contenedor__grafica{
@@ -1808,12 +1792,12 @@ li {
   }
   .contenedor__parametros{
     width: 100%;
-    height: 18px;
     display: flex;
+    justify-content: center;
   }
   .contenedor__parametros li{
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 20px;
+    margin-left: 20px;
     list-style: none;
     font-weight: 400;
     font-size: 14px;
@@ -1832,6 +1816,12 @@ li {
   .temp{
     background-color:var(--second);
     margin-right: 3px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.54;
+
   }
   .hum{
     background-color:var(--five);
