@@ -90,6 +90,7 @@ let isOpen = false;
 
 button.addEventListener('click', function() {
   if (!isOpen) {
+    contenedor__grafica
     contenedor.style.transform = 'translateY(-100%)';
     picture1.style.transform = 'rotate(180deg)';
     contenedor__principal.style.height = '0px';
