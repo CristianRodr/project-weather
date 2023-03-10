@@ -247,6 +247,13 @@ article .container__off {
   top: -20px;
 }
 
+.btn__five-days .container {
+  width: 1060px;
+  justify-content: end;
+  margin-bottom: 25px;
+  display: flex;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   *, :after, :before {
     box-sizing: inherit;

@@ -560,10 +560,14 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _auto = require("chart.js/auto");
 var _autoDefault = parcelHelpers.interopDefault(_auto);
-async function grafica() {
+const busqueda = document.querySelector(".form-countries");
+const buscar = document.querySelector("#buscar");
+let chart;
+async function grafica(valor) {
     try {
-        const data = await clima();
-        new (0, _autoDefault.default)(document.getElementById("acquisitions"), {
+        const data = await clima(valor);
+        if (chart) chart.destroy();
+        chart = new (0, _autoDefault.default)(document.getElementById("acquisitions"), {
             type: "line",
             data: {
                 labels: data.map((row)=>row.x),
@@ -580,10 +584,19 @@ async function grafica() {
         console.log(error);
     }
 }
-async function clima() {
+buscar.addEventListener("click", async ()=>{
+    try {
+        //en valor se estaria capturando el valor del input 
+        const valor = busqueda.value;
+        await grafica(valor);
+    } catch (error) {
+        console.log(error);
+    }
+});
+async function clima(valor) {
     try {
         const response = await fetch(`
-  http://api.openweathermap.org/data/2.5/forecast?q=bogota&appid=c1e47110da4d70de2cafd30f980532f1&units=metric`);
+  http://api.openweathermap.org/data/2.5/forecast?q=${valor}&appid=c1e47110da4d70de2cafd30f980532f1&units=metric`);
         const responsejson = await response.json();
         console.log(responsejson);
         const datosUnicos = [];
@@ -629,6 +642,24 @@ async function clima() {
     }
 }
 grafica();
+const button = document.querySelector(".contenedor__button");
+const contenedor = document.querySelector(".contenedor");
+const picture1 = document.querySelector("\xb7btn__open");
+const contenedor__principal = document.querySelector(".contenedor__principal");
+let isOpen = false;
+button.addEventListener("click", function() {
+    if (!isOpen) {
+        contenedor.style.transform = "translateY(-100%)";
+        picture1.style.transform = "rotate(180deg)";
+        contenedor__principal.style.height = "0px";
+        isOpen = true;
+    } else {
+        contenedor.style.transform = "translateY(0)";
+        picture1.style.transform = "rotate(0deg)";
+        contenedor__principal.style.height = "auto";
+        isOpen = false;
+    }
+});
 
 },{"chart.js/auto":"d8NN9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d8NN9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
