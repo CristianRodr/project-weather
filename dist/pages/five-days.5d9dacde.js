@@ -603,6 +603,11 @@ link1.addEventListener("click", openHidden1);
 link2.addEventListener("click", openHidden2);
 link3.addEventListener("click", openHidden3);
 link4.addEventListener("click", openHidden4);
+window.addEventListener(`load`, ()=>{
+    const cont_loader = document.querySelector(".container_loader");
+    cont_loader.style.opacity = 0;
+    cont_loader.style.visibility = `hidden`;
+});
 
 },{}]},["jy52z","1Z4Rq"], "1Z4Rq", "parcelRequiref1d5")
 

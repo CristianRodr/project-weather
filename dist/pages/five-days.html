@@ -16,6 +16,10 @@
   </head>
   <body>
 
+    <div class="container_loader">
+      <div class="loader"></div>
+    </div>
+
     <header class="header">
       <div class="container">
         <form class="header__form">
@@ -875,6 +879,13 @@
       </div>
 
     </div>
-    <script src="/pages/five-days.5d9dacde.js" defer=""></script>
+    <script>window.onload = function() {
+    const containerLoader = document.querySelector(".container_loader");
+    containerLoader.style.visibility = "hidden";
+    containerLoader.style.opacity = "0";
+};
+
+</script>
+    <script src="/index.5d9dacde.js" defer=""></script>
   </body>
 </html>
