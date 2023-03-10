@@ -1193,284 +1193,6 @@ article .container__off {
 
 /* CSS GP-002 ------------------------------------------ */
 
-body {
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  color: white;
-  background-image: url("../images/Fondo\ 1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.control {
-  background: rgba(16, 33, 54, 0.8);
-  box-shadow: 0px 8px 43px rgba(16, 33, 54, 0.6);
-  border-radius: 34px;
-  margin: 0 90px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  margin: 0 50px;
-}
-
-.control-2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  margin: 0 60px;
-}
-
-.paragrafo {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.cards-efecto {
-  border: 1px solid #ffffff33;
-  border-radius: 25px;
-  margin-top: 30px;
-  align-items: center;
-  margin-bottom: 8px;
-  width: 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards-efecto:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-a {
-  margin-top: 15px;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 14.4px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 10px;
-  opacity: 30%;
-}
-
-a:focus {
-  opacity: 100%;
-}
-
-.card-tem,
-.min,
-.max {
-  color: #ff6b09;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
-.card-fecha {
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.04em;
-  text-align: center;
-}
-
-
-.magnitudes--ajuste {
-  display: flex;
-  gap: 5px;
-  margin-right: 8px;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-.card-diatexto {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.04em;
-  text-align: center;
-  margin: 0;
-}
-
-.card-diatexto:hover {
-  color: #ff6b09;
-}
-
-.cards-efecto>.card-fecha {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-.presion,
-.humedad,
-.velocidad {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-svg {
-  margin-top: 18px;
-}
-
-svg.humedad {
-  margin-left: -25px;
-}
-
-li {
-  list-style: none;
-}
-
-.min__max {
-  display: flex;
-  gap: 15px;
-  margin-left: -45px;
-  margin-top: 9.97px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.6px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-
-  .cards-efecto:nth-child(6),
-  .cards-efecto:nth-child(7),
-  .cards-efecto:nth-child(8) {
-    display: none;
-  }
-
-  .cards-efecto {
-    margin-top: 39.59px;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-diatexto {
-    font-size: 14px;
-    line-height: 16.8px;
-    text-align: center;
-    margin: 0;
-  }
-
-  .card-fecha {
-    font-size: 18px;
-    line-height: 21.6px;
-    text-align: center;
-    margin-bottom: 0;
-  }
-
-  .min__max {
-    gap: 16px;
-    margin-left: -20px;
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 16.8px;
-    text-align: center;
-  }
-
-  .card-tem,
-  .min,
-  .max {
-    font-size: 18px;
-    line-height: 21.6px;
-  }
-
-  .cards-efecto>.card-fecha {
-    line-height: 16.8px;
-  }
-
-  .presion,
-  .humedad,
-  .velocidad {
-    line-height: 16.8px;
-  }
-
-
-
-}
-
-@media screen and (min-width: 290px) and (max-width: 767px) {
-
-  .cards-efecto:nth-child(3),
-  .cards-efecto:nth-child(4),
-  .cards-efecto:nth-child(5),
-  .cards-efecto:nth-child(6),
-  .cards-efecto:nth-child(7),
-  .cards-efecto:nth-child(8) {
-    display: none;
-  }
-
-  .cards-efecto {
-    margin-top: 43px;
-    /*  width: 110px; */
-    margin-left: 10px;
-  }
-
-  .magnitudes--ajuste {
-    margin: 0 17px;
-  }
-
-  .paragrafo {
-    margin-left: 17px;
-  }
-
-  .paragrafo:nth-child(3),
-  .paragrafo:nth-child(4) {
-    display: none;
-  }
-
-  .card-fecha {
-    font-size: 16px;
-    line-height: 19.2px;
-    text-align: center;
-    margin-bottom: 0;
-  }
-
-  .card-diatexto {
-    font-size: 12px;
-    text-align: center;
-    margin: 0;
-  }
-
-  .min__max {
-    font-size: 12px;
-    line-height: 14.4px;
-    text-align: center;
-    gap: 16px;
-    /* margin-left: 0;*/
-  }
-
-  .card-tem,
-  .min,
-  .max {
-    font-size: 14px;
-    line-height: 16.8px;
-  }
-
-  .cards-efecto>.card-fecha {
-    line-height: 16.8px;
-  }
-
-  .presion,
-  .humedad,
-  .velocidad {
-    line-height: 16.8px;
-  }
-}
 
 
 /* CSS GP-002 ------------------------------------------ */
@@ -1650,7 +1372,7 @@ li {
     opacity: 0.54;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .contenedor{
     width: 620px;
     height: 462px;
@@ -1814,9 +1536,9 @@ li {
     opacity: 0.54;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .contenedor{
-    width: 900px;
+    width: 1060px;
     height: 540px;
     margin-left: auto;
     margin-right: auto;
@@ -1862,7 +1584,7 @@ li {
   }
 
   .contenedor__grafica{
-    width: 822px;
+    width: 960px;
     height: 430px;
     position: absolute;
     top: 88px;
@@ -1930,7 +1652,7 @@ li {
     height: 20px;
     rotate: -90deg;
     margin-top: 170px;
-    margin-left: -68px;
+    margin-left: 30px;
     color:var(--fourth);
     font-weight: 400;
     font-size: 14px;
@@ -1938,11 +1660,12 @@ li {
     opacity: 0.54;
   }
   .contenedor__tabla{
-    width: 700px;
+    width: 900px;
     height: 350px;
     margin-top: -160px;
     margin-left: 40px;
     display: flex;
+    justify-content: center;
   }
   .contenedor__tabla__medidas{
     width: 50px;
