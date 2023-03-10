@@ -10,8 +10,11 @@ html {
 
 body {
   box-sizing: border-box;
+  color: #fff;
   font-family: var(--font__general);
-  background-color: gray;
+  background-image: url("Fondo 1x.0360c999.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {

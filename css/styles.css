@@ -13,7 +13,10 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: grey;
+  color: white;
+  background-image: url("../images/Fondo\ 1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: var(--font__general);
 }
 
