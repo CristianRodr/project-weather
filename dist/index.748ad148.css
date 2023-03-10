@@ -23,6 +23,248 @@ h1 {
   color: #0ff;
 }
 
+body {
+  box-sizing: border-box;
+  color: #fff;
+  background-image: url("Fondo 1x.0360c999.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Lato, sans-serif;
+}
+
+.control {
+  background: #102136cc;
+  border-radius: 34px;
+  margin: 0 90px;
+  box-shadow: 0 8px 43px #10213699;
+}
+
+.cards {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin: 0 50px;
+  display: flex;
+}
+
+.control-2 {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin: 0 60px;
+  display: flex;
+}
+
+.paragrafo {
+  flex-flow: column;
+  align-items: center;
+  margin-top: 40px;
+  display: flex;
+}
+
+.cards-efecto {
+  width: 110px;
+  border: 1px solid #fff3;
+  border-radius: 25px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.cards-efecto:hover {
+  background-color: #ffffff1a;
+}
+
+a {
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+  opacity: .3;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.4px;
+}
+
+a:focus {
+  opacity: 1;
+}
+
+.card-tem, .min, .max {
+  color: #ff6b09;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.card-fecha {
+  letter-spacing: .04em;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.magnitudes--ajuste {
+  gap: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 8px;
+  display: flex;
+}
+
+.card-diatexto {
+  letter-spacing: .04em;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.card-diatexto:hover {
+  color: #ff6b09;
+}
+
+.cards-efecto > .card-fecha {
+  letter-spacing: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.presion, .humedad, .velocidad {
+  letter-spacing: 0;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+svg {
+  margin-top: 18px;
+}
+
+svg.humedad {
+  margin-left: -25px;
+}
+
+li {
+  list-style: none;
+}
+
+.min__max {
+  letter-spacing: 0;
+  text-align: center;
+  gap: 15px;
+  margin-top: 9.97px;
+  margin-left: -45px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cards-efecto:nth-child(6), .cards-efecto:nth-child(7), .cards-efecto:nth-child(8) {
+    display: none;
+  }
+
+  .cards-efecto {
+    width: 80px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 39.59px;
+    display: flex;
+  }
+
+  .card-diatexto {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .card-fecha {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .min__max {
+    text-align: center;
+    gap: 16px;
+    margin-top: 15px;
+    margin-left: -20px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .card-tem, .min, .max {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .cards-efecto > .card-fecha, .presion, .humedad, .velocidad {
+    line-height: 16.8px;
+  }
+}
+
+@media screen and (min-width: 290px) and (max-width: 767px) {
+  .cards-efecto:nth-child(3), .cards-efecto:nth-child(4), .cards-efecto:nth-child(5), .cards-efecto:nth-child(6), .cards-efecto:nth-child(7), .cards-efecto:nth-child(8) {
+    display: none;
+  }
+
+  .cards-efecto {
+    margin-top: 43px;
+    margin-left: 10px;
+  }
+
+  .magnitudes--ajuste {
+    margin: 0 17px;
+  }
+
+  .paragrafo {
+    margin-left: 17px;
+  }
+
+  .paragrafo:nth-child(3), .paragrafo:nth-child(4) {
+    display: none;
+  }
+
+  .card-fecha {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .card-diatexto {
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .min__max {
+    text-align: center;
+    gap: 16px;
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .card-tem, .min, .max {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .cards-efecto > .card-fecha, .presion, .humedad, .velocidad {
+    line-height: 16.8px;
+  }
+}
+
 :root {
   --font__general: "Lato", sans-serif;
   --background__square: #102136;
