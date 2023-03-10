@@ -92,11 +92,15 @@ button.addEventListener('click', function() {
   if (!isOpen) {
     contenedor.style.transform = 'translateY(-100%)';
     picture1.style.transform = 'rotate(180deg)';
-    contenedor__principal.style.height = '0px';
+    contenedor__principal.style.height = contenedor__principal.scrollHeight + 'px'; // Establecer altura inicial
+    contenedor__principal.offsetHeight; // Forzar una actualización de la altura para que la transición funcione correctamente
+    contenedor__principal.style.height = '0px'; 
     isOpen = true;
   } else {
     contenedor.style.transform = 'translateY(0)';
     picture1.style.transform = 'rotate(0deg)';
+    contenedor__principal.style.height = contenedor__principal.scrollHeight + 'px'; // Establecer altura inicial
+    contenedor__principal.offsetHeight; // Forzar una actualización de la altura para que la transición funcione correctamente
     contenedor__principal.style.height= 'auto';
     isOpen = false;
   }

@@ -26,6 +26,7 @@
 }
 
 .contenedor__principal {
+  transition: height .3s ease-out;
   overflow: hidden;
 }
 
