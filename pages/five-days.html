@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="./../css/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./../css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <title>Weather APP</title>
+    <script type="module" src="./../assets/js/index.js"></script>
+  </head>
+  <body>
+
+    <div class="container_loader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <form class="header__form">
+          <a href="#" id="buscar"><svg width="22" height="22" id="ubicacion"><use xlink:href="./../images/Icons.svg#icon-icon-location"></use></svg></a>
+          <label>
+            <input type="text" placeholder="Enter the city" class="form-countries">
+          </label>
+          <svg width="22" height="22" id="star"><use xlink:href="./../images/Icons.svg#icon-Star-1"></use></svg>
+        </form>
+      </div>
+    </header>
+
+    <section class="btn__five-days">
+      <div class="container">
+        <div class="section__btn">
+          <a href="./../index.html"><button class="btn first">today</button></a>
+          <a href="./../pages/five-days.html"><button class="btn first">5 days</button></a>
+        </div>
+    </div>
+    </section>
+
+    <div class="contenedor">
+
+      <div class="contenedor__tag">
+        <a class="contenedor__button">
+          <p class="contenedor__hide">Hide Chart</p>
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" id="btn__open">
+            <circle cx="14" cy="14" r="14" transform="rotate(90 14 14)" fill="white" fill-opacity="0.2"/>
+            <path d="M18 12L14 16L10 12" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="contenedor__grafica">
+        <ul class="contenedor__parametros">
+          <li class="average">AVERAGE:</li>
+          <div class="contparams">
+            <li class="medida"><div class="temp"></div> - Temperature,<span class="celsius">C°</span></li>
+            <li class="medida"><div class="hum"></div> - Humidity,<span class="percent">%</span></li>
+            <li class="medida"><div class="wind"></div> - Wind Speed,<span class="seconds">m/s</span></li>
+            <li class="medida"><div class="atm"></div> - Atmosphere Pressure,<span class="meters">m/m</span></li>
+          </div>
+        </ul>
+        <div class="contenedor__parametros__indicadores">
+          <p>Value of Indicators</p>
+        </div>
+        <div class="contenedor__tabla">
+          <canvas id="acquisitions"></canvas>
+        </div>
+      </div>
+
+    </div>
+    <script>
+      window.onload = function () {
+        const containerLoader = document.querySelector(".container_loader");
+        containerLoader.style.visibility = "hidden";
+        containerLoader.style.opacity = "0"
+      }
+    </script>
+    <script type="module" src="./../js/index.js"></script>
+  </body>
+</html>
