@@ -611,6 +611,13 @@ article .container__off {
   top: -20px;
 }
 
+.btn__five-days .container{
+  width: 280px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 25px;
+}
+
 /* CSS GP-001 */
 
 }
@@ -891,6 +898,13 @@ article .container__off {
   position: absolute;
   top: -20px;
 }
+
+.btn__five-days .container{
+  width: 620px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 25px;
+}
 /* CSS GP-001 */
 
 }
@@ -1162,6 +1176,13 @@ article .container__off {
   #comillas {
     position: absolute;
     top: -20px;
+  }
+
+  .btn__five-days .container{
+    width: 1060px;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 25px;
   }
   /* CSS GP-001 */
 
@@ -1494,6 +1515,19 @@ li {
   padding: 0px;
   font-family: 'Lato', sans-serif;
   font-style: normal;
+}
+
+
+.contenedor{
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+.contenedor__tag{
+  z-index: 1;
+}
+.contenedor__principal{
+  overflow: hidden;
+  transition: height 0.3s ease-out;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
