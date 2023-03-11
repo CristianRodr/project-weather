@@ -202,7 +202,7 @@ const clima = async function (busqueda) {
               main.temp_max
             )}°</span></li>
             </ul>
-            <a href="#">more info</a>
+            <a href="#" class="more__info">more info</a>
         </div>
   `;
 
@@ -297,6 +297,18 @@ const clima = async function (busqueda) {
         );
         console.log(timApi);
         tomaFecha(timApi);
+
+        document.querySelector(".btn").classList.remove("btn__hidden");
+
+        const close = function () {
+          document.querySelector(".control-2").classList.add("btn__hidden");
+
+          document.querySelector(".btn").classList.add("btn__hidden");
+        };
+
+        document.querySelector(".btn").addEventListener("click", close);
+
+        document.querySelector(".control-2").classList.remove("btn__hidden");
       });
     });
 

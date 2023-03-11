@@ -51,7 +51,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-a {
+.more__info {
   margin-top: 15px;
   color: #ffffff;
   font-size: 12px;
@@ -63,7 +63,7 @@ a {
   opacity: 30%;
 }
 
-a:focus {
+.more__info:focus {
   opacity: 100%;
 }
 
@@ -83,7 +83,6 @@ a:focus {
   letter-spacing: 0.04em;
   text-align: center;
 }
-
 
 .magnitudes--ajuste {
   display: flex;
@@ -148,6 +147,18 @@ li {
   text-align: center;
 }
 
+.btn {
+  position: absolute;
+  top: 100%;
+  right: 130px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn__hidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
   .cards-efecto:nth-child(6),
@@ -204,8 +215,10 @@ li {
     line-height: 16.8px;
   }
 
-
-
+  .btn {
+    right: 120px;
+    top: 90%;
+  }
 }
 
 @media screen and (min-width: 290px) and (max-width: 767px) {
@@ -274,5 +287,10 @@ li {
   .humedad,
   .velocidad {
     line-height: 16.8px;
+  }
+
+  .btn {
+    top: 87%;
+    right: 110px;
   }
 }
